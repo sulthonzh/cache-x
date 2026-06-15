@@ -1,0 +1,25 @@
+{
+  "name": "cache-x",
+  "version": "1.0.0",
+  "description": "Zero-dependency caching: LRU, LFU, TTL, and hybrid cache implementations",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test test/*.test.js",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": ["cache", "lru", "lfu", "ttl", "memory", "zero-dependency"],
+  "license": "MIT",
+  "author": "sulthonzh",
+  "repository": { "type": "git", "url": "https://github.com/sulthonzh/cache-x" },
+  "files": ["dist", "README.md", "LICENSE"]
+}
