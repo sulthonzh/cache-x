@@ -17,9 +17,30 @@
     "test": "node --test test/*.test.js",
     "prepublishOnly": "npm run build && npm test"
   },
-  "keywords": ["cache", "lru", "lfu", "ttl", "memory", "zero-dependency"],
+  "keywords": [
+    "cache",
+    "lru",
+    "lfu",
+    "ttl",
+    "memory",
+    "zero-dependency"
+  ],
   "license": "MIT",
   "author": "sulthonzh",
-  "repository": { "type": "git", "url": "https://github.com/sulthonzh/cache-x" },
-  "files": ["dist", "README.md", "LICENSE"]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sulthonzh/cache-x"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "homepage": "https://github.com/sulthonzh/cache-x#readme",
+  "bugs": {
+    "url": "https://github.com/sulthonzh/cache-x/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
 }
